@@ -57,15 +57,15 @@ Finally, close the module.
 
 Now, open Modelsim, compile both files `decoder24.v` and `decoder24_bench.v`, and simulate the testbench. When the simulator opens, highlight both of the `in_stim` and `out_stim` signals, right click, and select Add Wave:
 
-![Add Wave Figure](https://github.com/dahmanrb/cs552-testbench-tutorial/blob/master/figures/add_wave.png)
+![Add Wave Figure](./figures/add_wave.png)
 
 Now the waveform viewer will appear. Run the testbench by selecting Run All near the top of the simulator (you can also type `run -all` into the command line):
 
-![Run All Figure](https://github.com/dahmanrb/cs552-testbench-tutorial/blob/master/figures/run_all.png)
+![Run All Figure](./figures/run_all.png)
 
 Vsim will ask you if you want to close the simulator, because it reached a `$finish` command. However, we want to continue to view the console output and the waveform, so you should select No:
 
-![Finish Vsim Figure](https://github.com/dahmanrb/cs552-testbench-tutorial/blob/master/figures/finish_vsim.png)
+![Finish Vsim Figure](./figures/finish_vsim.png)
 
 Now take a look at the console. You'll notice there are a few errors being asserted, and you can verify this by looking at the waveform viewer to see which outputs are wrong. Try to find the cause of the issue in the `decoder24` module, then re-simulate.
 
